@@ -1,11 +1,10 @@
 ﻿using System;
-using System.Net.Sockets;
 
 namespace Code.Kata {
-
     public class FizzBuzz {
 
         public FizzBuzz() { }
+        
         public string Check(int valueToCheck) {
             string result = "";
 
@@ -14,12 +13,9 @@ namespace Code.Kata {
             }
 
             if (valueToCheck % 5 == 0) {
-                result += " Buzz"; // concatinating this and trimming also works 
+                result += "Buzz"; // Note the concatination
             }
-            // if (valueToCheck % 15 == 0) { // %3 and %5 is always also %15 
-            //     result "FizzBuzz";
-            // }
-            return result.Trim();
+            return (result.Length > 0) ? result : valueToCheck.ToString();
         }
 
         public int Count(int countTo) {
@@ -29,6 +25,7 @@ namespace Code.Kata {
                 Console.WriteLine(Check(i));
                 result++;
             }
+            Console.WriteLine($" result is: {result}");
             return result;
         }
     }
