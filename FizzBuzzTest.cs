@@ -3,7 +3,8 @@ using Xunit;
 namespace Code.Kata;
 
 public class FizzBuzzTest {
-    FizzBuzz fizzBuzz = new FizzBuzz();
+    readonly FizzBuzz fizzBuzz = new FizzBuzz();
+    
     [Fact]
     public void FizzBuzzShouldReturnNormalNumbers() {
         Assert.Equal("1", fizzBuzz.Check(1));
