@@ -1,28 +1,24 @@
 ﻿using System;
 using System.Net.Sockets;
 
-namespace Code.Kata
-{
+namespace Code.Kata {
 
-    public class FizzBuzz
-    {
+    public class FizzBuzz {
 
         public FizzBuzz() { }
-        public string Check(int valueToCheck)
-        {
-            if (valueToCheck % 15 == 0)
-            {
-                return "FizzBuzz";
+        public string Check(int valueToCheck) {
+            string result = "";
+
+            if (valueToCheck % 3 == 0) {
+                result "Fizz";
             }
-            if (valueToCheck % 3 == 0)
-            {
-                return "Fizz";
+            if (valueToCheck % 5 == 0) {
+                result "Buzz";
             }
-            if (valueToCheck % 5 == 0)
-            {
-                return "Buzz";
+            if (valueToCheck % 15 == 0) {
+                result "FizzBuzz";
             }
-            return valueToCheck.ToString();
+            return result;
         }
 
         public int Count(int countTo) {
@@ -32,13 +28,7 @@ namespace Code.Kata
                 Console.WriteLine(Check(i));
                 result++;
             }
-
             return result;
         }
     }
-
-
-
 }
-
-

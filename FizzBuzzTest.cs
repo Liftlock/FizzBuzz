@@ -27,9 +27,7 @@ public class FizzBuzzTest {
     }
 
     [Fact]
-    public void FizzBuzzShouldOutputAllTheCorrectValues() {
+    public void FizzBuzzShouldOutputAllTheOtherCorrectValues() {
         Assert.Equal(100, fizzBuzz.Count(100));
     }
-
-
 } 
