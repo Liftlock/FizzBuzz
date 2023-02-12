@@ -7,7 +7,7 @@ public class FizzBuzzTest {
     [Fact]
     public void FizzBuzzShouldReturnNormalNumbers() {
         Assert.Equal("1", fizzBuzz.Check(1));
-        Assert.Equal("2", fizzBuzz.Check(2));     
+        Assert.Equal("2", fizzBuzz.Check(2));    
     }
 
     [Fact]
